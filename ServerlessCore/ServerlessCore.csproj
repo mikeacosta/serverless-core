@@ -5,11 +5,14 @@
     <AWSProjectType>Lambda</AWSProjectType>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.3.102" />
+    <PackageReference Include="AWSSDK.Core" Version="3.3.101.6" />
     <PackageReference Include="awssdk.dynamodbv2" Version="3.3.100.5" />
+    <PackageReference Include="AWSSDK.SecretsManager" Version="3.3.100.15" />
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.4" />
     <PackageReference Include="AWSSDK.S3" Version="3.3.31.19" />
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.6" />
-    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="3.0.2" />
+    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="3.0.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
   </ItemGroup>
   <ItemGroup>

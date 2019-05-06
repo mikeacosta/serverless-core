@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServerlessCore.Data.Models;
 using ServerlessCore.Services;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServerlessCore.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProfileController : ControllerBase
