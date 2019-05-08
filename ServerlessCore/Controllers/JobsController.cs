@@ -27,6 +27,15 @@ namespace ServerlessCore.Controllers
             return jobs;
         }
 
+        [Route("{id}")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<Job>> GetJob(int id)
+        {
+            var job = await _jobService.GetJobAsync(id);
+            return job;
+        }
+
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

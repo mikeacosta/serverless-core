@@ -19,6 +19,8 @@ namespace ServerlessCore.Libs.Models
 
         public string Website { get; set; }
 
+        public string City { get; set; }
+
         public string Image { get; set; }
 
         public List<string> Content { get; set; }

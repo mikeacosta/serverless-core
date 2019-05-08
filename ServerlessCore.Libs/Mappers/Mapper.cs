@@ -45,6 +45,7 @@ namespace ServerlessCore.Libs.Mappers
                 Start = job.Start,
                 End = job.End,
                 Website = job.Website,
+                City = job.City,
                 Image = job.Image,
                 Content = job.Content.Select(c => c.ToString()).ToList()
             };
@@ -60,6 +61,7 @@ namespace ServerlessCore.Libs.Mappers
                 Start = job.Start,
                 End = job.End,
                 Website = job.Website,
+                City = job.City,
                 Image = job.Image,
                 Content = job.Content.Select(c => c.ToString()).ToList()
             };
